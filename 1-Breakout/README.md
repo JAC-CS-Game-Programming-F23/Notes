@@ -4,7 +4,7 @@
 
 - **Images (Sprites)**: How can we load images from memory to our game and draw them on the screen?
 - **Sprite Sheets**: Allows us to condense all the images we need to load for our game into one big image, with each sprite assigned a specific area in the sheet.
-- **State Machines**: Last week we used a rudimentary "state machine" for pong, which was really just a string variable and a few if statements in our love.update() function. This week we'll see how we can actually use a state machine class to allow us to transition in and out of different states more cleanly, and abstract this logic away from our main.js file and into separate classes.
+- **State Machines**: Last week we used a rudimentary "state machine" for pong, which was really just a string variable and a few if statements in our `update()` function. This week we'll see how we can actually use a state machine class to allow us to transition in and out of different states more cleanly, and abstract this logic away from our main.js file and into separate classes.
 - **Procedural Layouts**: We'll take a look at how to dynamically generate bricks layouts so that no two levels are the same.
 - **Levels**: We'll introduce the concept of "levels" to our game, allowing a player to progress and change what we're displaying to the screen accordingly.
 - **Player Health**: We'll learn how to keep track of player "health" using hearts to give them a number of chances before losing the game.
