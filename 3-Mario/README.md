@@ -530,7 +530,7 @@ Mario-9 adds 3 new _game objects_ to the game: blocks, bushes, and coins! The te
 
 ### Game Objects
 
-- Game objects are separate from the tiles in our map, for things that maybe don't align perfectly with it.For example, maybe they have different widths/heights or their positions are offset by a different amount than `TILE_SIZE`.
+- Game objects are separate from the tiles in our map, for things that maybe don't align perfectly with it. For example, maybe they have different widths/heights or their positions are offset by a different amount than `TILE_SIZE`.
 - Game objects can be tested for collision with AABB.
 - For example, power-ups in Mario can be represented as game objects:
   - ⭐ A star game object may flip an `isInvincible` flag on the player and begin an `invincibilityDuration` timer.
