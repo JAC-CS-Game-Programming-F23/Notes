@@ -18,7 +18,7 @@ _Image from [Breaking Canon](http://breakingcanon.com/the-legend-of-zelda/)_
 
 ## 🔨 Setup
 
-1. Clone the repo (or download the zip) for today's lecture, which you can find [here](https://github.com/JAC-CS-Game-Programming-F23/5-Zelda).
+1. Clone the repo (or download the zip) for today's lecture, which you can find [here](https://github.com/JAC-CS-Game-Programming-F23/4-Zelda).
 2. Open the repo in Visual Studio Code.
 3. Start Visual Studio Code's "Live Server" extension. If you don't have it installed:
    1. Click on the extensions icons in the left-hand side navigation.
