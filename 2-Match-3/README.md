@@ -515,7 +515,7 @@ Match-3-3 implements logic to detect matches of 3 or more tiles in a row or colu
 4. After all rows have been checked for matches, this process is repeated for each column, going from top to bottom.
 5. The result of our algorithm is a 2D array containing each array of matches, both horizontal and vertical, with each array containing an array of the tiles in the match.
 
-[Detection Video](images/Detection.mp4 ':include :type=video controls width=100%')
+[Detection Video](./images/Detection.mp4 ':include :type=video controls width=100%')
 
 ### Important Code
 
@@ -555,7 +555,7 @@ Now the question is how to remove our matching tiles, once we have them all in a
    2. Once a `null` slot is found, its position is marked and the next non-`null` tile found in the column is tweened down to the marked position.
    3. This process is iterated for each `null` slot in each column.
 
-[Removal Video](images/Removal.mp4 ':include :type=video controls width=100%')
+[Removal Video](./images/Removal.mp4 ':include :type=video controls width=100%')
 
 #### Tile Replacement Algorithm
 
@@ -566,7 +566,7 @@ Now the question is how to remove our matching tiles, once we have them all in a
 - The possibility exists that the newly-generated tiles will create additional matches when they spawn, so, check for matches again (recursively) after generating the new tiles.
   - This is done in `PlayState::calculateMatches()` function, which uses the functions in `Board.js` to calculate matches, remove matches, and get falling tiles, and then recurses until it ensures that no new matches have been found.
 
-[Replacement Video](images/Replacement.mp4 ':include :type=video controls width=100%')
+[Replacement Video](./images/Replacement.mp4 ':include :type=video controls width=100%')
 
 ### Important Code
 

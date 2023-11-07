@@ -15,7 +15,7 @@
 
 Originally developed by Atari in 1976. An effective evolution of Pong, Breakout ditched the two-player mechanic in favor of a single-player game where the player, still controlling a paddle, was tasked with eliminating a screen full of differently placed bricks of varying values by deflecting a ball back at them.
 
-![Breakout](images/Breakout.png)
+![Breakout](./images/Breakout.png)
 
 _Image from [Wikipedia](https://en.wikipedia.org/wiki/Breakout_(video_game))_
 
@@ -47,7 +47,7 @@ _An example of one of the most well known title screens from [Super Mario Bros.]
 
 Here's the state diagram we're going to use for the final version of Breakout:
 
-![Breakout State Flow](images/Breakout-State-Flow.png)
+![Breakout State Flow](./images/Breakout-State-Flow.png)
 
 - The program will begin in `TitleScreenState`, which can transition back and forth between itself and `HighScoreState` (since the user can check high scores before playing).
 - `TitleScreenState` can also transition to `PaddleSelectState`, which transitions on to `ServeState`.

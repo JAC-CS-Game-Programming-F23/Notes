@@ -18,7 +18,7 @@ We are aiming to recreate "Pong"; a simple 2 player game in which one player has
 - At that point, we'll want to add sound effects for when the ball hits paddles and walls, and for when a point is scored.
 - Lastly, we'll display the score on the screen so that the players don't have to remember it during the game.
 
-![Pong](images/Pong.png)
+![Pong](./images/Pong.png)
 
 _Image from [Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Pong.png/480px-Pong.png)_
 
@@ -44,7 +44,7 @@ A game, fundamentally, is an infinite loop, like a `while(true)`. During every i
 2. Second, we need to respond to that input from the previous step by updating anything in the game that depends on that input (i.e., tracking movement, detecting collisions, etc.).
 3. Third, we need to re-render anything that was updated in the previous step, so that the user can see visually on the screen that the game has changed and feel a sense of interactivity.
 
-![Game Loop](images/Game-Loop.png)
+![Game Loop](./images/Game-Loop.png)
 
 _Image from [Game Programming Patterns](gameprogrammingpatterns.com/game-loop.html), where you can read more about game loops._
 
@@ -54,7 +54,7 @@ In the context of 2D games, the most fundamental way of looking at the world is 
 
 Slightly different from the traditional coordinate system you might've used in Math class, the 2D coordinate system we're referring to here is a system in which objects have an X and Y coordinate (X, Y) and are drawn accordingly, with (0, 0) being the top-left of the system. This means positive directions moving down and to the right, while negative directions move up and to the left.
 
-![Coordinate System](images/2D-Coordinate-System.png)
+![Coordinate System](./images/2D-Coordinate-System.png)
 
 _Image from [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes)._
 
@@ -64,11 +64,11 @@ _Image from [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tu
 
 Combining the previous two sections, we paint (and repaint) on a 2D canvas over and over again until the game stops. This repainting is what gives the illusion of things being moved on the screen. But, how fast is the repainting happening? This depends on the hardware your game is running on. You may have heard the terms "30 FPS" and "60 FPS" before. FPS stands for "frames per second". A "frame" is a single painting of our animation.
 
-[![Frame Rates](images/Frame-Rates.gif)](https://javimir.tumblr.com/post/116880977997)
+[![Frame Rates](./images/Frame-Rates.gif)](https://javimir.tumblr.com/post/116880977997)
 
 For example, if our hardware runs at 3 frames per second, this means that in one second, we have 3 repaints.
 
-![3 frames per second](images/Delta-Time-3-FPS.png)
+![3 frames per second](./images/Delta-Time-3-FPS.png)
 
 In other words, we have 1 repaint (roughly) every 0.33 seconds (1/3). Our **delta time** in this case is 0.33 seconds.
 
@@ -80,11 +80,11 @@ A game that is frame rate dependent is one in which parts of the game is tied sp
 
 Let's look at one area in a game which shouldn't be frame rate dependent, **movement**. When we are describing movement it's in terms of the distance we travel over some specified time, like pixels per second (p/s), or kilometers per hour (kmph). If our game is frame rate dependent, then the speed at which our objects move is tied to the frame rate which means the speed of our game objects will be different on different hardware.
 
-![30 frames per second](images/Delta-Time-30-FPS.png)
+![30 frames per second](./images/Delta-Time-30-FPS.png)
 
 Assuming we have a spaceship and we want it to move at 10p/s, if we knew our game ran at 30fps on our device, then we would want it to move at 0.33333 pixels per frame.
 
-![60 frames per second](images/Delta-Time-60-FPS.png)
+![60 frames per second](./images/Delta-Time-60-FPS.png)
 
 However, as soon as we run our game on a different device then the speed at which our ship moves will no longer be at 10p/s. On a device that can run our game at 60fps, we would have moved 20p/s. This is because we would be moving at 0.33333 pixels per frame, but the number of paints we're doing in 1 second has **doubled**!
 
